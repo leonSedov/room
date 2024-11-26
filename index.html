@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="password-page" class="container">
+    <h1>Digite a senha para começar:</h1>
+    <input type="password" id="password-input" placeholder="Senha" />
+    <button id="submit-password" class="btn">Entrar</button>
+    <div id="password-error" class="error-message"></div>
+  </div>
+
+  <div id="game-page" class="container hidden">
+    <div id="timer">Tempo restante: 03:00</div>
+    <h1>Escolha o botão correto</h1>
+    <div class="buttons">
+      <button id="reiniciar" class="btn">REINICIAR</button>
+      <button id="desconectar" class="btn">DESCONECTAR</button>
+      <button id="limpar-cache" class="btn">LIMPAR CACHE</button>
+      <button id="modo-seguranca" class="btn">MODO DE SEGURANÇA</button>
+      <button id="executar-diagnostico" class="btn">EXECUTAR DIAGNÓSTICO</button>
+      <button id="restaurar-configuracao" class="btn">RESTAURAR CONFIGURAÇÃO DE FÁBRICA</button>
+    </div>
+    <div id="message"></div>
+  </div>
+
+  <audio id="error-sound" src="error.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
